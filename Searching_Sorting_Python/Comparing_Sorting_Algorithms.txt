@@ -1,0 +1,18 @@
+📊 Comparing Sorting Algorithms
+
+Algorithm         	Best & Avg Time Complexity	Worst Time Complexity	Space Complexity
+----------------------------------------------------------------------------------------
+Bubble Sort       	O(n)                   	O(n²)                	O(1)
+Insertion Sort    	O(n)                   	O(n²)                	O(1)
+Selection Sort    	O(n²)                  	O(n²)                	O(1)
+Merge Sort        	O(n log n)             	O(n log n)           	O(n)
+Quick Sort        	O(n log n) (avg)       	O(n²)                	O(1)
+Counting Sort     	O(n + x)               	O(n + x)             	O(n + x)
+
+📝 Note:
+- n = number of elements
+- x = the range of input values (max element)
+- Quick Sort’s worst case occurs when pivot selection is poor 
+  (e.g., sorted array and pivot is smallest/largest every time).
+- Merge Sort is stable, Quick Sort is not, unless modified.
+- Counting Sort is only used when x is not significantly greater than n.
