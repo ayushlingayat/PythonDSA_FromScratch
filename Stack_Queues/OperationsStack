@@ -1,0 +1,10 @@
+push(x) – Inserts element x at the top of the stack
+
+pop() – Removes the top element of the stack
+
+top() – Returns the top element without removing it
+
+isEmpty() – Checks if the stack is empty
+
+isFull() – Checks if the stack is full (in case of fixed-size stack)
+
