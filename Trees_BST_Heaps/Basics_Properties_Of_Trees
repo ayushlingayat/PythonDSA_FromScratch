@@ -1,0 +1,25 @@
+1. No Cycle
+
+2. Connected
+
+3. n nodes -> (n-1) edges
+
+4.Directed -> Edges have direction ok
+
+
+--------------------------------------------BINARY TREE-------------------------------------------
+
+Binary tree kee concept mein naa Tree kee 2 hee nodes matlab children hote hee
+at most 2 matlab 2 hee children reh sakhte not more than two
+
+Each node of binary tree consist of three items:
+
+Binary tree kii node mein data hota hee actually aur ek hota hee left child(left pointer) and hota
+hee right child also uske bol sakhte hum right child(right pointer)
+
+                                               data
+                                              /    \
+                                           left     right
+
+
+

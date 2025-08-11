@@ -1,0 +1,73 @@
+Vese toh naa 4 Types of Traversal hote hee okk
+
+Basic naa 3 hote hee traversal
+1.Preorder Traversal
+2.Postorder Traversal
+3.Inorder Traversal
+
+-> yeeh 3 no traversal naa recurssion kee through implement hote hee
+okk yeeh yaad rakhna
+-> bina recurssion kee karna hee toh hum naa
+stack kee through bhi krr sakhte hee okk
+
+Aur ek naa 4 no kaa hote hee
+4.Level Order Traversal
+
+Level order traversal naa Queue seeh implement hota hee okk
+
+Recurssion aur Stack and Queue inka bohat use hota hee in tree
+and graph okk
+
+-----------------------Preorder Traversal--------------------------
+
+Preorder Traversal (Root → Left → Right)
+
+Preorder Traversal mein naa hum root koo first visit karte hum okk
+phir uske left subtree mein jate hee
+phir uske left subtree mein same preorder lagte hoo
+phir left subtree pura hota tab hum log right subtree mein jate hee
+
+         A
+       /   \
+      B     C
+     / \   / \
+    D   E F   G
+
+PreOrder Traversal : A → B → D → E → C → F → G this way
+
+
+-----------------------Postorder Traversal--------------------------
+
+3. Postorder Traversal (Left → Right → Root)
+
+phele left subtree phir right subtree phir aayega root okk idar aesha hee hota hee
+
+         A
+       /   \
+      B     C
+     / \   / \
+    D   E F   G
+
+Postorder Traversal : D → E → B → F → G → C → A
+Traversal Output: D E B F G C A
+
+------------------------Inorder Traversal --------------------------------------
+
+phele naa left subtree phir root then naa right subtree atta hee idar okk
+
+         A
+       /   \
+      B     C
+     / \   / \
+    D   E F   G
+
+Inorder Traversal (Left → Root → Right)
+Steps: D → B → E → A → F → C → G
+
+Traversal Output: D B E A F C G
+
+-----------------------Level Order Traversal ----------------------------------
+abb floor wise traverse karna means row wise okk interms of tree isiko hum bolte hee
+Level Order Traversal okk thik hee
+
+

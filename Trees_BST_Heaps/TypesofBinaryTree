@@ -1,0 +1,105 @@
+#Types of Binary Tree
+
+1. Full Binary Tree
+-> Every node has 0 or 2 children (no node has only one child).
+
+          1
+        /   \
+       2     3
+      / \   / \
+     4   5 6   7
+
+2.Perfect Binary Tree
+All internal nodes have 2 children
+All leaf nodes are at the same level
+
+ismein bhi 0 yaa phir 2 children hoo sakhte hee
+
+          1
+        /   \
+       2     3
+      / \   / \
+     4   5 6   7
+
+3.Complete Binary Tree
+All levels are completely filled except possibly the last level
+Last level is filled from left to right
+
+no of child pee restriction nhi hota hee child can be 0,1,2
+bhi hoo sakhte hee okk
+
+complete binary tree yeeh bolta hee kii agar mein yeeh tree
+mein level by level traverse karta huu toh ismein
+koi bhi gap nhi anna chahiye until and unless pura tree
+traverse naa hoo jaye
+
+          1
+        /   \
+       2     3
+      / \   /
+     4   5 6
+
+4. Degenerate (or Skewed) Binary Tree
+Every parent node has only one child.
+Can be left-skewed or right-skewed.
+
+degenerate binary tree mein 0 yaa phir bss 1 children hoga litreally
+aesha hee hota hee yeeh
+
+skewed matlab ek direction
+yaa toh right mein sarre node nhi toh left mein sarre node
+
+Left Skewed
+    1
+   /
+  2
+ /
+3
+
+
+Right Skewed
+1
+ \
+  2
+   \
+    3
+
+4. Balanced Binary Tree
+Height difference between left and right subtree is not
+more than 1 for any node.
+
+joo node hoti naa uska left subtree aur uska naa right subtree
+unki height kaa joo difference hota hee vooh 1 yaa phir 1 seeh chota hota hee
+
+ abs(h(left_subtree) - h(right_subtree)) <= 1 (or zero)
+
+agar 1 seeh bada hua toh vooh balanced binary tree nhi hee
+
+A Balanced Binary Tree is a binary tree in which the height difference
+between the left and right subtree of every node is at most 1.
+📌 It ensures good performance (O(log n) for insert/search/delete).
+
+        1
+       / \
+      2   3
+     / \
+    4   5
+
+Node 1: left height = 2 (via node 2), right height = 1 → difference = 1 ✅
+Node 2: left height = 1 (via node 4), right height = 1 (via node 5) → difference = 0 ✅
+All nodes are balanced ✅
+This is a valid Balanced Binary Tree.
+
+yaha pee log of base 2 n hota hee tree kee height yeeh property hee okk
+(log₂n)
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,33 @@
+A Binary Search Tree is a type of binary tree that satisfies: (This are also properties)
+
+1.Every node has at most two children — left and right.
+2.Left subtree values < node’s value
+3.Right subtree values > node’s value
+4.Both left and right subtrees are also BSTs.
+
+Binary search tree is a data structure that quickly allows us to maintain a sorted list of numbers.
+It is called a binary tree because each tree node has a maximum of two children.
+It is called a search tree because it can be used to search for the presence of a number in O(log(n)) time.
+
+Example BST :
+
+        50
+       /  \
+     30    70
+    / \    / \
+  20  40  60  80
+
+
+Root = 50
+All nodes in the left subtree of 50 have values less than 50.
+All nodes in the right subtree of 50 have values greater than 50.
+The property repeats for every node.
+
+agar nodes organised hogi toh aap kee node pee naa easily puch sakhte hoo people thats it
+
+in BST the TC is always order of height O(height)
+
+
+
+
+

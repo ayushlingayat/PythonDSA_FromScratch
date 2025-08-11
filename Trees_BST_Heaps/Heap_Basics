@@ -1,0 +1,32 @@
+A Heap is:
+A complete binary tree (CBT) — all levels are completely filled except possibly the last, which is filled from left to right.
+
+Satisfies the Heap Property:
+Max Heap: Every parent is ≥ its children.
+Min Heap: Every parent is ≤ its children.
+
+Heap ≠ Binary Search Tree (BST)
+Heap property only cares about parent-child relationship, not about left being smaller or larger.
+
+
+Types of Heaps
+
+Max Heap : Parent is always greater than or equal to its children.
+
+        100
+       /   \
+     50     90
+    /  \   /  \
+  30   40 80  85
+
+
+Min Heap : Parent is always less than or equal to its children.
+
+        10
+       /  \
+     15    20
+    / \    / \
+  30  40  50  60
+
+
+Insertion and deletion in Heap is O(log n)
