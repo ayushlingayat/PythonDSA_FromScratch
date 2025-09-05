@@ -31,11 +31,11 @@ This repository contains my personal notes, and important concepts that I'm lear
 
 - Language:
   - Python 🐍 (Primary)
-  - Created by @AYUSH LINGAYAT its my personal work
     
 ---
 
 
 ### ⭐ If you find this repository helpful, don’t forget to give it a **star**! ⭐
+### Created by me @AYUSH LINGAYAT 
 
 ### THANK YOU 😇🀄
