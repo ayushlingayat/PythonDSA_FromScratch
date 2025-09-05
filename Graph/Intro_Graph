@@ -1,0 +1,103 @@
+
+
+================================#Graph Introduction===================================
+
+
+A graph is a data structure that consists of:
+Vertices (Nodes) – represent entities.
+Edges – represent relationships between entities.
+
+Graphs are used in real-world problems like social networks, maps, recommendation systems, and more.
+
+
+==================================Graph Terminology ==============================================
+
+1. Adjacency
+Simple Explanation:
+Two people are adjacent if they are directly connected, like being best friends.
+If there is a direct friendship (an edge) between them, they are adjacent.
+
+Example:
+
+If Alice and Bob are friends, they are adjacent.
+If Alice knows Bob, and Bob knows Charlie, but Alice and Charlie are strangers, then Alice and Charlie are not adjacent.
+
+In Python:
+You can represent this using a dictionary where the keys are people and the values are their friends.
+
+friends = {
+    "Alice": ["Bob", "Eve"],
+    "Bob": ["Alice", "Charlie"],
+    "Charlie": ["Bob"],
+    "Eve": ["Alice"]
+}
+# "Bob" is in "Alice's" list, so Alice and Bob are adjacent.
+# "Charlie" is NOT in "Alice's" list, so they are not adjacent.
+
+====================================================================================================
+2.Path
+
+Simple Explanation:
+A path is a sequence of friendships you follow to get from one person to another.
+It's like the "friend of a friend" connection.
+
+Example:
+To get from Alice to Charlie, you can follow this path:
+Alice → Bob → Charlie.
+
+The path consists of the two edges: (Alice, Bob) and (Bob, Charlie).
+
+In Python:
+The path is the sequence of keys you would follow to move through the dictionary.
+
+# A path from "Alice" to "Charlie":
+start_person = "Alice"
+next_person = friends[start_person][0]  # This is "Bob"
+end_person = friends[next_person][0]     # This is "Charlie"
+# Path: Alice -> Bob -> Charlie
+
+=====================================================================================================
+3.Directed Graph
+
+Simple Explanation:
+In a directed graph, a connection only goes one way.
+Think of social media where you can "follow" someone, but they don't have to follow you back.
+
+Example:
+
+If Alice follows Bob, that's a directed edge from Alice to Bob.
+This one-way relationship doesn't automatically mean that Bob follows Alice.
+
+In Python:
+The difference is that if Bob is in Alice's list, Alice is not necessarily in Bob's list.
+
+# A directed graph showing who is following whom
+following = {
+    "Alice": ["Bob"],    # Alice follows Bob
+    "Bob": ["Charlie"],  # Bob follows Charlie
+    "Charlie": []        # Charlie doesn't follow anyone back
+}
+# There is an edge from Alice to Bob, but not from Bob to Alice.
+
+===============================================================================================================
+4.Weighted Graph
+
+Simple Explanation:
+A weighted graph is when the connections (edges) have a specific number attached to them.
+This number can represent things like distance, cost, or how strong a relationship is.
+
+Example:
+
+Imagine a road map where the "edges" are roads. The weight could be the distance in kilometers.
+In a friendship network, the weight could be the number of years two people have been friends.
+
+In Python:
+You can represent this using a dictionary of dictionaries, where the inner dictionary stores the weight.
+
+# A weighted graph showing distance between cities
+city_distances = {
+    "CityA": {"CityB": 100, "CityC": 250}, # 100km is the weight of the edge to CityB
+    "CityB": {"CityA": 100},
+    "CityC": {"CityA": 250}
+}
+# The weight of the edge from "CityA" to "CityB" is 100.
