@@ -25,12 +25,13 @@ This repository contains my personal notes, and important concepts that I'm lear
 - 🔗 Linked Lists
 - 📦 Heaps & HashMaps
 - 📈 Sorting & Searching
-- 💡 Graphs (Coming Soon)
+- 💡 Graphs
 
 ---
 
 - Language:
   - Python 🐍 (Primary)
+  - Created by @AYUSH LINGAYAT its my personal work
     
 ---
 
